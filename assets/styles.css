@@ -186,3 +186,20 @@ a.card:hover { border-color: var(--red); transform: translateY(-2px); color: inh
   .hero .wrap { gap: 18px; }
   .details-panel .facts div { grid-template-columns: 1fr; }
 }
+
+/* Consistent centered layout */
+.wrap > h2, .section-intro { text-align: center; margin-left: auto; margin-right: auto; }
+.content, .faq { margin-left: auto; margin-right: auto; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; }
+.grid > * { flex: 1 1 300px; max-width: 348px; }
+.steps { justify-content: center; }
+.about { text-align: center; }
+.about .facts { text-align: left; }
+.about .details-panel summary { display: inline-block; }
+.page-head .wrap { text-align: center; }
+.page-head .btn-row { justify-content: center; }
+.page-head .answer { text-align: left; margin-left: auto; margin-right: auto; }
+@media (max-width: 860px) {
+  .hero .wrap { text-align: center; justify-items: center; }
+  .hero .btn-row { justify-content: center; }
+}
