@@ -692,8 +692,8 @@ def render_home():
     out = head(title, desc, url, graph) + f"""<main id="main">
 <section class="hero"><div class="wrap">
  <div>
-  <span class="eyebrow">{COMPANY} · NMLS #{NMLS}</span>
-  <h1>Hunter Strong, your loan officer in Arkansas, Mississippi &amp; Tennessee</h1>
+  <span class="eyebrow">Hunter Strong · Loan Officer in Arkansas, Mississippi &amp; Tennessee</span>
+  <h1>Let's get you home, minus the mortgage headache.</h1>
   <p class="lede">I help first-time buyers, families, veterans and investors get into the right home loan, with straight answers on your payment, your cash to close and your credit before you ever make an offer.</p>
   <div class="btn-row">
    <a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Get Pre-Approved</a>
