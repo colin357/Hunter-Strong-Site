@@ -692,16 +692,13 @@ def render_home():
     out = head(title, desc, url, graph) + f"""<main id="main">
 <section class="hero"><div class="wrap">
  <div>
-  <span class="eyebrow">Mortgage Loan Officer · NMLS #{NMLS}</span>
+  <span class="eyebrow">{COMPANY} · NMLS #{NMLS}</span>
   <h1>Hunter Strong, your loan officer in Arkansas, Mississippi &amp; Tennessee</h1>
   <p class="lede">I help first-time buyers, families, veterans and investors get into the right home loan, with straight answers on your payment, your cash to close and your credit before you ever make an offer.</p>
   <div class="btn-row">
    <a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Get Pre-Approved</a>
    <a class="btn btn-ghost" href="sms:{PHONE_E164}">Text Me: {PHONE_DISPLAY}</a>
   </div>
-  <ul class="chips" aria-label="Highlights">
-   <li>{YEARS} years in mortgage</li><li>Licensed in 13 states</li><li>FHA · VA · Conventional</li><li>{COMPANY}</li>
-  </ul>
  </div>
  <div class="hero-photo">
   <img src="/assets/hunter-strong.jpg" width="600" height="600" alt="Hunter Strong, mortgage loan officer with FirstTrust Home Loans" fetchpriority="high">
@@ -709,39 +706,42 @@ def render_home():
  </div>
 </div></section>
 
-<section class="alt" id="about"><div class="wrap two-col">
- <div class="content">
-  <div class="answer"><h2>Who is Hunter Strong?</h2>
-   <p>{NAME} is a mortgage {TITLE.lower()} with {COMPANY} (NMLS #{NMLS}) based in {CITY}, Arkansas. With {YEARS} years in the mortgage industry and hundreds of families helped through purchases and refinances, he specializes in first-time home buyers, FHA and VA loans, new construction, investment properties and refinancing across Arkansas, Mississippi, Tennessee and 10 other states.</p>
-  </div>
-  <h2>A little about me</h2>
-  <p>I got into this business because buying a home shouldn't feel confusing or intimidating. My goal is to be knowledgeable, approachable and easy to reach, and to make the process simple. I walk you through every option so you can decide with confidence, and I treat my clients like family.</p>
-  <p>You won't get a sales pitch about "the lowest rate in town" from me. What you'll get is great service, the right loan product for your situation and an education on how it all works. My team of three loan officer assistants and two processors keeps your file moving and keeps you in the loop.</p>
-  <p>Outside of work, I'm married to my wife, Jordyn, and we have a daughter, Elyse. You'll find me watching NFL football, reading or out on the lake with my family.</p>
- </div>
- <dl class="facts" aria-label="Quick facts about Hunter Strong">
-  <div><dt>Name</dt><dd>{NAME}</dd></div>
-  <div><dt>Role</dt><dd>Mortgage Loan Officer</dd></div>
-  <div><dt>Company</dt><dd><a href="{COMPANY_PROFILE}" rel="noopener">{COMPANY}</a> (NMLS #{COMPANY_NMLS})</dd></div>
-  <div><dt>Personal NMLS</dt><dd><a href="{NMLS_URL}" rel="noopener">#{NMLS}</a></dd></div>
-  <div><dt>Experience</dt><dd>{YEARS} years in the mortgage industry</dd></div>
-  <div><dt>Office</dt><dd>{STREET}, {CITY}, {REGION} {ZIP}</dd></div>
-  <div><dt>Primary markets</dt><dd>Arkansas, Mississippi, Tennessee</dd></div>
-  <div><dt>Licensed in</dt><dd>{LICENSED_LIST}</dd></div>
-  <div><dt>Specialties</dt><dd>{", ".join(SPECIALTIES)}</dd></div>
-  <div><dt>Team</dt><dd>3 loan officer assistants, 2 processors</dd></div>
-  <div><dt>Phone / text</dt><dd><a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a></dd></div>
-  <div><dt>Email</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd></div>
- </dl>
+<section class="stats-band" aria-label="At a glance"><div class="wrap">
+ <ul class="stats">
+  <li><strong>{YEARS}</strong><span>years in mortgage</span></li>
+  <li><strong>13</strong><span>states licensed</span></li>
+  <li><strong>5-person</strong><span>support team</span></li>
+  <li><strong>FHA · VA</strong><span>first-time buyer pro</span></li>
+ </ul>
 </div></section>
 
-<section id="loans"><div class="wrap">
+<section id="about"><div class="wrap about">
+ <div class="content">
+  <h2>Hi, I'm Hunter.</h2>
+  <p class="lede">I'm a mortgage {TITLE.lower()} with {COMPANY} in {CITY}, Arkansas. I've spent {YEARS} years helping hundreds of families buy and refinance homes across Arkansas, Mississippi, Tennessee and 10 other states.</p>
+  <p>Buying a home shouldn't feel confusing. I explain every option in plain English, I'm easy to reach, and I treat my clients like family. You won't hear a "lowest rate in town" pitch from me. You'll get great service and the right loan for your situation, and my team of three loan officer assistants and two processors keeps your file moving.</p>
+  <p>Off the clock, I'm with my wife Jordyn and our daughter Elyse, watching NFL football, reading or out on the lake.</p>
+  <details class="details-panel">
+   <summary>Licensing &amp; contact details</summary>
+   <dl class="facts" aria-label="Quick facts about Hunter Strong">
+    <div><dt>Name</dt><dd>{NAME}, Mortgage Loan Officer</dd></div>
+    <div><dt>NMLS</dt><dd><a href="{NMLS_URL}" rel="noopener">#{NMLS}</a> · {COMPANY} <a href="{COMPANY_NMLS_URL}" rel="noopener">#{COMPANY_NMLS}</a></dd></div>
+    <div><dt>Office</dt><dd>{STREET}, {CITY}, {REGION} {ZIP}</dd></div>
+    <div><dt>Licensed in</dt><dd>{LICENSED_LIST}</dd></div>
+    <div><dt>Specialties</dt><dd>{", ".join(SPECIALTIES)}</dd></div>
+    <div><dt>Contact</dt><dd><a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a> · <a href="mailto:{EMAIL}">{EMAIL}</a></dd></div>
+   </dl>
+  </details>
+ </div>
+</div></section>
+
+<section class="alt" id="loans"><div class="wrap">
  <h2>Loan programs</h2>
  <p class="section-intro">Every situation is different. Here are the loans I help people with most. Tap any one for a plain-English guide.</p>
  <div class="grid">{loan_cards}</div>
 </div></section>
 
-<section class="alt"><div class="wrap">
+<section><div class="wrap">
  <h2>How working with me works</h2>
  <p class="section-intro">No mystery, no radio silence. Here's what to expect from first call to closing day.</p>
  <ol class="steps">
@@ -753,13 +753,13 @@ def render_home():
  </ol>
 </div></section>
 
-<section id="areas"><div class="wrap">
+<section class="alt" id="areas"><div class="wrap">
  <h2>Where I lend</h2>
  <p class="section-intro">I'm based in {CITY}, Arkansas, and I focus on Arkansas, Mississippi and Tennessee. I'm also licensed in {other_states}, so if you're relocating or buying out of state, I can still help.</p>
  <div class="grid">{area_cards}</div>
 </div></section>
 
-<section class="alt" id="faq"><div class="wrap">
+<section id="faq"><div class="wrap">
  <h2>Questions I get every week</h2>
  <p class="section-intro">The big three are always cash to close, the payment versus the house and credit scores. Here are straight answers.</p>
  {faq_html(HOME_FAQS)}

@@ -48,6 +48,7 @@ li { margin-bottom: .35em; }
 .nav { display: flex; align-items: center; gap: 22px; }
 .nav a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: .95rem; }
 .nav a:hover { color: var(--red); }
+.nav a.btn-primary, .nav a.btn-primary:hover { color: #fff; }
 .menu { display: none; }
 .menu summary { list-style: none; cursor: pointer; font-weight: 700; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; }
 .menu summary::-webkit-details-marker { display: none; }
@@ -160,4 +161,28 @@ a.card:hover { border-color: var(--red); transform: translateY(-2px); color: inh
 @media (max-width: 420px) {
   .wrap { padding: 0 16px; }
   .btn { width: 100%; }
+}
+
+/* Homepage: lighter trust signals */
+.hero-meta { font-size: .9rem; color: var(--muted); font-weight: 600; margin: 0; }
+.stats-band { padding: 0 0 8px; }
+.stats { list-style: none; margin: 0; padding: 22px 0; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stats li { margin: 0; text-align: center; padding: 4px 12px; border-left: 1px solid var(--line); }
+.stats li:first-child { border-left: 0; }
+.stats strong { display: block; font-size: 1.6rem; font-weight: 800; color: var(--red); line-height: 1.2; }
+.stats span { font-size: .88rem; color: var(--muted); }
+.about { max-width: 760px; }
+.details-panel { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }
+.details-panel summary { cursor: pointer; font-weight: 700; font-size: .92rem; color: var(--charcoal); }
+.details-panel .facts { margin-top: 12px; font-size: .9rem; }
+.details-panel .facts div { grid-template-columns: 120px 1fr; }
+.details-panel .facts dt, .details-panel .facts dd { padding: 8px 14px; }
+@media (max-width: 860px) {
+  .stats { grid-template-columns: repeat(2, 1fr); row-gap: 18px; }
+  .stats li:nth-child(3) { border-left: 0; }
+  .hero-photo { max-width: 150px; }
+  .hero-photo img { border-radius: 50%; box-shadow: none; }
+  .hero-badge { display: none; }
+  .hero .wrap { gap: 18px; }
+  .details-panel .facts div { grid-template-columns: 1fr; }
 }
