@@ -25,3 +25,13 @@ This regenerates `index.html`, every page folder, `404.html`, `sitemap.xml`, `ro
 - Visible FAQs that mirror the FAQ schema
 
 Deploys as-is to any static host (Vercel, Netlify, GitHub Pages, Cloudflare Pages).
+
+## Brand (FirstTrust Brand & Style Guidelines)
+- Colors: Red `#BC242B`, Gray `#524B4B`, White, Black (tokens at the top of `assets/styles.css`).
+- Type: Minion Pro (primary) and Gill Sans MT (secondary) are licensed fonts. The CSS uses them when installed and falls back to Crimson Pro and Cabin from Google Fonts. The signature uses Mrs Saint Delafield as a stand-in for "The Secret".
+- Logos: `assets/firsttrust-logo.png` (primary horizontal, on white only), `firsttrust-wordmark.png`, `firsttrust-mark.png`. Don't recolor, stretch or add effects.
+- Required on every page: Equal Housing Lender logo, NMLS 75271, myFTHL.com, and the FirstTrust disclaimer (all in the footer; the wording lives in `DISCLAIMER` in `_build/build.py`).
+- Copy: say "can", not "will". No guaranteed approvals, and nothing that downplays credit or income requirements.
+
+## Photos
+Stock photos in `assets/img/` come from Unsplash (free under the Unsplash License, no attribution required). Swap in local photos of Hunter, his team or Arkansas homes whenever you have them.
