@@ -83,7 +83,7 @@ page(
 <p>On top of the down payment you'll have closing costs and prepaid items (taxes and insurance), so plan your <a href="/#faq">cash to close</a> rather than only the down payment. Gift money from family and seller-paid closing costs can cover a lot of it.</p>
 
 <h2>What credit score do I need?</h2>
-<p>As a rough guide: around 580 for FHA at 3.5% down, and around 620 for most conventional loans. VA has no VA-set minimum, but lenders set their own. If your score isn't there yet, Hunter will tell you exactly what to pay down or fix, and roughly how long it should take. He'd rather give you a plan than a "no."</p>
+<p>As a rough guide: around 580 for FHA at 3.5% down, and around 620 for most conventional loans. VA has no VA-set minimum, but lenders set their own. If your score isn't there yet, Hunter can show you what to pay down or fix, and roughly how long it may take. He'd rather work on a plan with you than leave you with a "no."</p>
 
 <h2>Is there down payment assistance?</h2>
 <p>Yes. State housing finance agencies run assistance programs for qualified buyers: <strong>ADFA</strong> in Arkansas, <strong>Mississippi Home Corporation</strong> in Mississippi and <strong>THDA</strong> in Tennessee. Income, price and credit limits apply and programs change, so ask Hunter which ones you may qualify for today.</p>
@@ -94,7 +94,7 @@ page(
 <li><strong>Pick a payment you're comfortable with,</strong> not just the maximum you're approved for.</li>
 <li><strong>Find a home</strong> with your real estate agent. Hunter can run numbers on any listing you send him.</li>
 <li><strong>Go under contract and lock your rate.</strong></li>
-<li><strong>Appraisal, underwriting and conditions.</strong> Hunter's team keeps you updated the whole way.</li>
+<li><strong>Appraisal, underwriting and conditions.</strong> Hunter's team works to keep you updated the whole way.</li>
 <li><strong>Close and get your keys.</strong></li>
 </ol>
 """,
@@ -185,7 +185,7 @@ page(
         ("Do VA loans really require no down payment?",
          "Yes. Eligible borrowers with full entitlement can buy with $0 down, subject to credit and income qualification. You'll still have closing costs, which seller concessions can often help cover."),
         ("Is there a minimum credit score for a VA loan?",
-         "The VA doesn't set a minimum credit score, but lenders do. Hunter will review your credit and tell you exactly where you stand."),
+         "The VA doesn't set a minimum credit score, but lenders do. Hunter can review your credit and tell you exactly where you stand."),
         ("Can I use my VA loan benefit more than once?",
          "Yes. Your entitlement is restored when you sell and pay off a VA loan, and in some cases you can have more than one VA loan at the same time."),
         ("Who is exempt from the VA funding fee?",
@@ -236,7 +236,7 @@ page(
     answer=f"""<p>Buying a newly built home works differently than buying an existing one: longer timelines, builder contracts, rate locks that may need to be extended and sometimes construction financing. {NAME}, a {TITLE.lower()} with {COMPANY} (NMLS #{NMLS}), helps buyers in Arkansas, Mississippi, Tennessee and 10 other states plan for new construction, from a spec home in a subdivision to a custom build.</p>""",
     body="""
 <h2>Buying from a builder</h2>
-<p>If the builder is constructing the home and you buy it at completion, you'll typically use a standard purchase loan (conventional, FHA or VA). The main differences are timing and rate protection, because the home may not be finished for months. Hunter will talk through rate-lock options so a rate change during the build doesn't wreck your budget.</p>
+<p>If the builder is constructing the home and you buy it at completion, you'll typically use a standard purchase loan (conventional, FHA or VA). The main differences are timing and rate protection, because the home may not be finished for months. Hunter can talk through rate-lock options so a rate change during the build doesn't wreck your budget.</p>
 
 <h2>Building on your own land</h2>
 <p>Custom builds may need construction financing that converts to a permanent mortgage when the home is finished. Requirements depend on the builder, the plans and the program, so bring your builder, budget and timeline to Hunter early.</p>
@@ -253,7 +253,7 @@ page(
         ("Do I have to use the builder's preferred lender?",
          "No. You can choose your own lender. Builders sometimes offer incentives for using their lender, so compare the full picture (rate, fees and incentives) before deciding. Hunter is happy to give you a side-by-side."),
         ("Can I lock my rate while my home is being built?",
-         "Extended rate locks are available in many cases and may cost more the longer the lock. Hunter will help you time the lock around your expected completion date."),
+         "Extended rate locks are available in many cases and may cost more the longer the lock. Hunter can help you time the lock around your expected completion date."),
         ("Can I use an FHA or VA loan on new construction?",
          "Often, yes, as long as the home and builder meet program requirements. Talk to Hunter before you sign so the paperwork is set up correctly."),
     ],
@@ -277,7 +277,7 @@ page(
 </ul>
 
 <h2>How rental income counts</h2>
-<p>Lenders can usually count a portion of expected or existing rental income (commonly 75% of the rent) to help you qualify, depending on the program and documentation. Hunter will show you how your rents change what you can afford.</p>
+<p>Lenders can usually count a portion of expected or existing rental income (commonly 75% of the rent) to help you qualify, depending on the program and documentation. Hunter can show you how your rents change what you can afford.</p>
 """,
     faqs=[
         ("How much do I need to put down on a rental property?",
@@ -311,7 +311,7 @@ page(
         ("Can I get pre-approved before I move?",
          "Yes. The entire pre-approval can be done remotely through Hunter's online application, so you can shop with a pre-approval letter from out of state."),
         ("Can I qualify with a new job I haven't started yet?",
-         "Often, yes. Many loan programs allow a signed offer letter with a start date shortly after closing. Hunter will check the requirements for your situation."),
+         "Often, yes. Many loan programs allow a signed offer letter with a start date shortly after closing. Hunter can check the requirements for your situation."),
     ],
 )
 
@@ -365,7 +365,7 @@ for slug, s in STATE_INFO.items():
 <li><strong>Easy to reach:</strong> call or text, including evenings and weekends.</li>
 <li><strong>Education first:</strong> he explains your payment, cash to close and options before you commit.</li>
 <li><strong>A full team:</strong> Hunter is backed by three loan officer assistants and two processors, so your file keeps moving.</li>
-<li><strong>Straight answers:</strong> if something is in the way, like credit or debt, you'll get a plan to fix it.</li>
+<li><strong>Straight answers:</strong> if something is in the way, like credit or debt, Hunter can help you map out a plan.</li>
 </ul>
 """,
         faqs=[
@@ -386,13 +386,19 @@ HOME_FAQS = [
     ("What states is Hunter Strong licensed in?",
      f"Hunter is licensed in {LICENSED_LIST}. His primary markets are Arkansas, Mississippi and Tennessee."),
     ("How much cash do I need to close on a house?",
-     "Cash to close is your down payment plus closing costs and prepaid items (like homeowners insurance and property tax escrow), minus any credits from the seller or lender. Closing costs often run around 2–5% of the purchase price. Down payment assistance, gift funds and seller concessions can reduce what you bring to closing. Hunter gives you a written estimate up front so there are no surprises."),
+     "Cash to close is your down payment plus closing costs and prepaid items (like homeowners insurance and property tax escrow), minus any credits from the seller or lender. Closing costs often run around 2–5% of the purchase price. Down payment assistance, gift funds and seller concessions can reduce what you bring to closing. Hunter can give you a written estimate up front so you know what to expect."),
     ("How much house can I afford?",
      "Start from the monthly payment you're comfortable with, not the maximum you're approved for. Your total payment includes principal, interest, property taxes, homeowners insurance and, if applicable, mortgage insurance and HOA dues. Lenders look at your debt-to-income ratio, but Hunter also helps you set a budget that leaves room for everyday life."),
     ("What credit score do I need to buy a house?",
-     "Typically a 580 minimum, with certain exceptions allowing scores as low as 500. If you're not there yet, Hunter will give you a specific plan to raise your score."),
+     "Typically a 580 minimum, with certain exceptions allowing scores as low as 500. If you're not there yet, Hunter can give you a specific plan to raise your score."),
     ("How do I get pre-approved with Hunter Strong?",
      f"Apply online through Hunter's secure application at apply.myfthl.com, or call or text him at {PHONE_DISPLAY}. Have recent pay stubs, W-2s and bank statements ready. Pre-approvals are often issued the same day."),
+    ("When should I talk to a loan officer?",
+     "Earlier than most people think. A few months before you plan to shop is ideal, because it leaves time to work on credit, save for closing costs or line up down payment assistance. Even if you're a year out, a quick conversation can show you what to focus on."),
+    ("What do I need to get started?",
+     "For a first conversation, nothing but a rough idea of your income, debts and savings. For a full pre-approval you'll typically need about 30 days of pay stubs, two years of W-2s (or tax returns if you're self-employed), two months of bank statements and a photo ID."),
+    ("Can I still qualify if my situation isn't straightforward?",
+     "Often, yes. Self-employment, a recent job change, past credit trouble or income from more than one source can still work. Those files take more planning up front, so bring Hunter the details early and he can tell you which documents and programs may fit."),
     ("Is Hunter Strong a mortgage broker or a lender?",
      f"Hunter is a loan officer with {COMPANY}, a mortgage company licensed under NMLS #{COMPANY_NMLS}. He guides you through the application, pre-approval, underwriting and closing."),
     ("Does Hunter Strong work with buyers who aren't using a specific real estate agent?",
@@ -510,18 +516,79 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
+COMPANY_LEGAL = "FirstTrust Home Loans, Inc."
+COMPANY_SHORT_URL = "myFTHL.com"
+# Required FirstTrust disclaimer (Style Guide p.14). Do not edit wording.
+DISCLAIMER = (f"{COMPANY_LEGAL}, NMLS# {COMPANY_NMLS}. This is not a commitment to lend or extend credit. "
+              "Restrictions may apply. Information and/or data is subject to change without notice. "
+              "All loans are subject to credit approval. Not all loans or products are available in all states.")
+
+# Photos (Unsplash license, stored locally in assets/img). slug -> (file, alt text)
+IMAGES = {
+    "first-time-home-buyers": ("first-time-buyers.jpg", "Small white house with a picket fence and fall leaves in the yard"),
+    "fha-loans": ("fha-loans.jpg", "Brick home with a sidewalk and young trees in a new neighborhood"),
+    "va-loans": ("va-loans.jpg", "Two-story home at sunrise with an American flag out front"),
+    "refinance": ("refinance.jpg", "Homeowner reviewing paperwork with a calculator and phone"),
+    "new-construction-loans": ("new-construction.jpg", "Builder reviewing house plans at a desk"),
+    "investment-property-loans": ("investment.jpg", "Aerial view of a neighborhood of single-family homes"),
+    "relocation": ("relocation.jpg", "Wood home on a hill at sunset"),
+    "arkansas-loan-officer": ("lake-dock.jpg", "Wooden dock on a calm lake surrounded by trees"),
+    "mississippi-loan-officer": ("mississippi.jpg", "Single-story white home with a green lawn"),
+    "tennessee-loan-officer": ("tennessee.jpg", "Brick home with a two-car garage on a suburban street"),
+}
+
+# Simple line icons (24x24, stroked). Drawn to match the FirstTrust core-values icon style.
+ICONS = {
+    "phone": '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>',
+    "text": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/>',
+    "mail": '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
+    "pin": '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
+    "heart": '<path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/>',
+    "people": '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',
+    "home": '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/>',
+    "eye": '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+    "gauge": '<path d="m12 14 4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/>',
+    "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+    "key": '<circle cx="7.5" cy="15.5" r="5.5"/><path d="m11.5 11.5 9-9M16 7l3 3M18.5 4.5l2 2"/>',
+    "flag": '<path d="M4 22V4"/><path d="M4 4h13l-2 4 2 4H4"/>',
+    "refresh": '<path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/>',
+    "hammer": '<path d="m15 12-8.5 8.5a2.1 2.1 0 0 1-3-3L12 9"/><path d="m17.6 15 4.4-4.4-6-6L13 7.6l-1-1-2 2 5 5"/>',
+}
+
+
+def icon(name, cls="ico"):
+    return (f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ICONS[name]}</svg>')
+
+
+EHO_LOGO = ('<svg class="eho-logo" viewBox="0 0 64 66" role="img" aria-label="Equal Housing Lender">'
+            '<path fill="currentColor" d="M32 2 3 19v7h5v22h48V26h5v-7z"/>'
+            '<rect x="19" y="25" width="26" height="5" class="eho-cut"/><rect x="19" y="35" width="26" height="5" class="eho-cut"/>'
+            '<text x="32" y="57" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7.4" font-weight="700" fill="currentColor">EQUAL HOUSING</text>'
+            '<text x="32" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="currentColor">LENDER</text></svg>')
+
+FT_LOGO = f'<img class="ft-logo" src="/assets/firsttrust-logo.png" width="640" height="246" alt="{COMPANY}">'
+
+
 def header():
     menu_items = "".join(f'<a href="/{p["slug"]}/">{esc(p["nav"])}</a>' for p in PAGES)
     return f"""<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="wrap">
+ <span>{NAME}, {TITLE} · NMLS #{NMLS} · {COMPANY_LEGAL} · NMLS #{COMPANY_NMLS}</span>
+ <span class="topbar-links"><a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a><a href="mailto:{EMAIL}">{EMAIL}</a></span>
+</div></div>
 <header class="site-header">
  <div class="wrap">
-  <a class="brand" href="/"><strong>{NAME}</strong><span>{TITLE} · NMLS #{NMLS}</span></a>
+  <a class="brand" href="/" aria-label="{NAME}, home">
+   <span class="brand-name"><strong>{NAME}</strong><span>{TITLE} · NMLS #{NMLS}</span></span>
+   {FT_LOGO}
+  </a>
   <nav class="nav" aria-label="Main">
    <a href="/#loans">Loan Programs</a>
+   <a href="/#process">How It Works</a>
    <a href="/#areas">Where I Lend</a>
    <a href="/#about">About</a>
    <a href="/#faq">FAQ</a>
-   <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a>
    <a class="btn btn-primary btn-sm" href="{APPLY_URL}" rel="noopener">Apply Now</a>
   </nav>
   <details class="menu">
@@ -529,7 +596,7 @@ def header():
    <div class="menu-panel">
     <a href="/">Home</a>{menu_items}<a href="/#faq">FAQ</a>
     <a href="tel:{PHONE_E164}">Call {PHONE_DISPLAY}</a>
-    <a href="{APPLY_URL}" rel="noopener">Apply Now →</a>
+    <a class="menu-apply" href="{APPLY_URL}" rel="noopener">Apply Now</a>
    </div>
   </details>
  </div>
@@ -538,30 +605,33 @@ def header():
 
 def footer():
     loan_links = "".join(f'<li><a href="/{p["slug"]}/">{esc(p["nav"])}</a></li>' for p in PAGES if p["kind"] == "loan")
-    area_links = "".join(f'<li><a href="/{p["slug"]}/">{esc(p["nav"])} Loan Officer</a></li>' for p in PAGES if p["kind"] == "area")
+    area_links = "".join(f'<li><a href="/{p["slug"]}/">{esc(p["nav"])}</a></li>' for p in PAGES if p["kind"] == "area")
     return f"""<footer class="site-footer">
  <div class="wrap">
   <div class="foot-grid">
-   <div>
-    <h3>{NAME}, {TITLE}</h3>
-    <p>NMLS #{NMLS}<br>{COMPANY} · NMLS #{COMPANY_NMLS}<br>{STREET}, {CITY}, {REGION} {ZIP}<br>
-    <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a> · <a href="mailto:{EMAIL}">{EMAIL}</a><br>
+   <div class="foot-brand">
+    <img class="ft-logo" src="/assets/firsttrust-logo.png" width="640" height="246" alt="{COMPANY}" loading="lazy">
+    <p><strong>{NAME}</strong>, Mortgage {TITLE}<br>NMLS #{NMLS}<br>
+    {COMPANY_LEGAL} · NMLS #{COMPANY_NMLS}<br>
+    {STREET}, {CITY}, {REGION} {ZIP}</p>
+    <p><a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a><br>
     <a href="{INSTAGRAM}" rel="noopener">Instagram @hunterglenn10</a></p>
    </div>
    <div><h3>Loan Programs</h3><ul>{loan_links}</ul></div>
-   <div><h3>Where I Lend</h3><ul>{area_links}</ul></div>
+   <div><h3>Where I Lend</h3><ul>{area_links}</ul>
+    <p class="foot-licensed">Also licensed in {", ".join(n for n in LICENSED.values() if n not in PRIMARY_STATES)}.</p></div>
   </div>
   <div class="legal">
-   <div class="eho"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 10h3v11h16V10h3L12 2zm5 17H7v-8.6l5-3.6 5 3.6V19zM9 12h6v1.6H9V12zm0 3h6v1.6H9V15z"/></svg> Equal Housing Opportunity</div>
-   <p>{NAME}, NMLS #{NMLS} (<a href="{NMLS_URL}" rel="noopener">verify on NMLS Consumer Access</a>). {COMPANY}, NMLS #{COMPANY_NMLS} (<a href="{COMPANY_NMLS_URL}" rel="noopener">NMLS Consumer Access</a>). Licensed to originate mortgage loans in {LICENSED_LIST}. <a href="{LICENSING_URL}" rel="noopener">Licensing &amp; legal disclosures</a>.</p>
-   <p>This is not a commitment to lend. All loans are subject to credit approval, underwriting guidelines, property eligibility and verification. Programs, rates, terms and conditions are subject to change without notice. Information on this site is general and educational, not financial or legal advice. Down payment assistance is provided by third-party agencies and subject to their eligibility rules and fund availability.</p>
-   <p>© 2026 {NAME}. Content last updated {UPDATED}.</p>
+   <div class="required">{EHO_LOGO}<span>NMLS {COMPANY_NMLS}</span><a href="https://www.myfthl.com/" rel="noopener">{COMPANY_SHORT_URL}</a></div>
+   <p>{DISCLAIMER}</p>
+   <p>{NAME}, NMLS #{NMLS} (<a href="{NMLS_URL}" rel="noopener">NMLS Consumer Access</a>). {COMPANY_LEGAL}, NMLS #{COMPANY_NMLS} (<a href="{COMPANY_NMLS_URL}" rel="noopener">NMLS Consumer Access</a>). Equal Housing Lender. Licensed to originate mortgage loans in {LICENSED_LIST}. <a href="{LICENSING_URL}" rel="noopener">Licensing &amp; legal disclosures</a>. Information on this site is general and educational, not financial or legal advice. Down payment assistance is provided by third-party agencies and subject to their eligibility rules and fund availability.</p>
   </div>
  </div>
+ <div class="foot-bar"><div class="wrap">© 2026 {NAME} · {COMPANY_LEGAL} · Content updated {UPDATED}</div></div>
 </footer>"""
 
 
-def head(title, desc, url, graph):
+def head(title, desc, url, graph, og_image="/assets/hunter-strong.jpg"):
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -576,16 +646,16 @@ def head(title, desc, url, graph):
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/assets/hunter-strong.jpg">
+<meta property="og:image" content="{SITE}{og_image}">
 <meta property="og:site_name" content="{NAME}, {TITLE}">
 <meta property="profile:first_name" content="Hunter">
 <meta property="profile:last_name" content="Strong">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#bc242b">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/firsttrust-mark.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
 {jsonld(graph)}
@@ -604,24 +674,32 @@ def faq_html(faqs):
 
 
 def cta():
-    return f"""<section><div class="wrap"><div class="cta">
- <div>
+    return f"""<section class="cta"><div class="wrap">
+ <div class="cta-copy">
   <h2>Ready to see your real numbers?</h2>
-  <p>Get pre-approved online in minutes, or text Hunter with your questions. No pressure and no jargon, just a clear plan.</p>
-  <div class="btn-row"><a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Start My Application</a><a class="btn btn-ghost" href="sms:{PHONE_E164}">Text Hunter</a></div>
+  <p>Start the application online, or send me a text with your questions first. Either way, you can get a clear picture of your options before you make any decisions.</p>
+  <div class="btn-row"><a class="btn btn-light" href="{APPLY_URL}" rel="noopener">Start My Application</a><a class="btn btn-outline-light" href="sms:{PHONE_E164}">Text Hunter</a></div>
  </div>
- <div class="cta-contact">
-  <strong>{NAME}</strong>, {TITLE}<br>
-  📞 <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a><br>
-  ✉️ <a href="mailto:{EMAIL}">{EMAIL}</a><br>
-  📍 {CITY}, Arkansas<br>
-  NMLS #{NMLS} · {COMPANY}
- </div>
-</div></div></section>"""
+ <ul class="cta-contact">
+  <li>{icon("phone")}<a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a></li>
+  <li>{icon("mail")}<a href="mailto:{EMAIL}">{EMAIL}</a></li>
+  <li>{icon("pin")}<span>{CITY}, Arkansas</span></li>
+  <li class="cta-nmls">{NAME}, {TITLE} · NMLS #{NMLS}<br>{COMPANY_LEGAL} · NMLS #{COMPANY_NMLS}</li>
+ </ul>
+</div></section>"""
+
+
+def photo_card(p, blurb, link_text):
+    img, alt = IMAGES[p["slug"]]
+    return (f'<a class="photo-card" href="/{p["slug"]}/">'
+            f'<img src="/assets/img/{img}" alt="{esc(alt)}" width="1100" height="733" loading="lazy">'
+            f'<span class="photo-card-body"><h3>{esc(p.get("state") or p["nav"])}</h3>'
+            f'<span class="photo-card-text">{blurb}</span><span class="more">{link_text}</span></span></a>')
 
 
 def render_subpage(p):
     url = f"{SITE}/{p['slug']}/"
+    img, alt = IMAGES[p["slug"]]
     graph = core_graph() + [
         webpage_schema(url, p["title"], p["desc"]),
         breadcrumb_schema(url, p["h1"]),
@@ -634,25 +712,36 @@ def render_subpage(p):
         faq_schema(url, p["faqs"]),
     ]
     related = "".join(
-        f'<a class="card" href="/{o["slug"]}/"><h3>{esc(o["nav"])}</h3><span class="more">Learn more →</span></a>'
+        f'<li><a href="/{o["slug"]}/">{esc(o["nav"])}</a></li>'
         for o in PAGES if o["kind"] == p["kind"] and o["slug"] != p["slug"]
     )
-    related_title = "Other loan programs" if p["kind"] == "loan" else "Other areas Hunter serves"
-    out = head(p["title"], p["desc"], url, graph) + f"""<main id="main">
-<div class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › {esc(p['h1'])}</nav>
- <span class="eyebrow">{NAME} · NMLS #{NMLS}</span>
- <h1>{esc(p['h1'])}</h1>
- <div class="answer content"><h2>The short answer</h2>{p['answer']}</div>
- <p class="updated">By {NAME}, {TITLE}, {COMPANY} · Updated <time datetime="{UPDATED}">November 7, 2026</time></p>
- <div class="btn-row"><a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Get Pre-Approved</a><a class="btn btn-ghost" href="tel:{PHONE_E164}">Call {PHONE_DISPLAY}</a></div>
+    related_title = "Other loan programs" if p["kind"] == "loan" else "Other areas I serve"
+    out = head(p["title"], p["desc"], url, graph, og_image=f"/assets/img/{img}") + f"""<main id="main">
+<div class="page-banner">
+ <img src="/assets/img/{img}" alt="{esc(alt)}" width="1100" height="733" fetchpriority="high">
+ <div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {esc(p['h1'])}</nav>
+  <h1>{esc(p['h1'])}</h1>
+ </div>
+</div>
+<div class="page-intro"><div class="wrap page-intro-grid">
+ <div class="answer">
+  <h2>The short answer</h2>{p['answer']}
+  <p class="updated">By {NAME}, {TITLE}, NMLS #{NMLS} · {COMPANY_LEGAL} · Updated <time datetime="{UPDATED}">November 7, 2026</time></p>
+ </div>
+ <aside class="side-card">
+  <img src="/assets/hunter-strong.jpg" alt="{NAME}" width="600" height="600" loading="lazy">
+  <p><strong>Talk it through with Hunter</strong>Call or text, evenings and weekends included.</p>
+  <a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Get Pre-Approved</a>
+  <a class="side-phone" href="tel:{PHONE_E164}">{icon("phone")}{PHONE_DISPLAY}</a>
+ </aside>
 </div></div>
-<section><div class="wrap content">{p['body']}</div></section>
-<section class="alt" id="faq"><div class="wrap">
+<section class="body-section"><div class="wrap"><div class="content">{p['body']}</div></div></section>
+<section class="alt" id="faq"><div class="wrap"><div class="content">
  <h2>Frequently asked questions</h2>
  {faq_html(p['faqs'])}
-</div></section>
-<section><div class="wrap"><h2>{related_title}</h2><div class="grid">{related}</div></div></section>
+ <div class="related"><h3>{related_title}</h3><ul>{related}</ul></div>
+</div></div></section>
 {cta()}
 </main>
 {footer()}
@@ -672,60 +761,78 @@ def render_home():
     graph = core_graph() + [webpage_schema(url, title, desc, ["WebPage", "ProfilePage"]) | {"mainEntity": {"@id": PERSON_ID}},
                             faq_schema(url, HOME_FAQS)]
     loan_blurbs = {
-        "first-time-home-buyers": "As little as 3% down, down payment assistance and a clear roadmap from pre-approval to keys.",
-        "fha-loans": "3.5% down with a 580+ score. Flexible on credit and debt-to-income.",
+        "first-time-home-buyers": "As little as 3% down, down payment assistance and a clear path from pre-approval to keys.",
+        "fha-loans": "3.5% down with a 580+ score. More flexible on credit and debt-to-income.",
         "va-loans": "$0 down and no monthly mortgage insurance for eligible veterans and service members.",
         "refinance": "Lower your payment, shorten your term, drop mortgage insurance or take cash out.",
         "new-construction-loans": "Builder purchases, rate locks during the build and construction financing.",
-        "investment-property-loans": "Rentals, 2–4 unit house hacks and cash-out to grow your portfolio.",
-        "relocation": "Moving for work or the military? Get pre-approved remotely and close on time.",
+        "investment-property-loans": "Rentals, 2–4 unit house hacks and cash-out to fund the next one.",
+        "relocation": "Moving for work or the military? Get pre-approved remotely before you arrive.",
     }
-    loan_cards = "".join(
-        f'<a class="card" href="/{p["slug"]}/"><h3>{esc(p["nav"])}</h3><p>{loan_blurbs[p["slug"]]}</p><span class="more">Learn more →</span></a>'
-        for p in PAGES if p["kind"] == "loan"
-    )
-    area_cards = "".join(
-        f'<a class="card" href="/{p["slug"]}/"><h3>{esc(p["state"])}</h3><p>Primary market. First-time buyer, FHA, VA, conventional, new construction and refinance loans.</p><span class="more">{esc(p["state"])} loan officer →</span></a>'
-        for p in PAGES if p["kind"] == "area"
-    )
+    loan_cards = "".join(photo_card(p, loan_blurbs[p["slug"]], "Read the guide") for p in PAGES if p["kind"] == "loan")
+    loan_cards += (f'<div class="help-tile"><h3>Not sure which loan fits?</h3>'
+                   f'<p>Most people aren\'t, and that\'s fine. Send me a text with what you\'re trying to do and I can point you toward the options worth comparing.</p>'
+                   f'<a class="btn btn-light" href="sms:{PHONE_E164}">Text {PHONE_DISPLAY}</a></div>')
+    area_blurbs = {
+        "Arkansas": f"Home base. My office is in {CITY}, about 30 miles south of Little Rock.",
+        "Mississippi": "From DeSoto County down to Jackson, Hattiesburg and the Coast.",
+        "Tennessee": "Memphis, Nashville, Chattanooga, Knoxville and everywhere between.",
+    }
+    area_cards = "".join(photo_card(p, area_blurbs[p["state"]], f"{esc(p['state'])} home loans") for p in PAGES if p["kind"] == "area")
     other_states = ", ".join(n for n in LICENSED.values() if n not in PRIMARY_STATES)
-    out = head(title, desc, url, graph) + f"""<main id="main">
-<section class="hero"><div class="wrap">
- <div>
-  <span class="eyebrow">Hunter Strong · Loan Officer in Arkansas, Mississippi &amp; Tennessee</span>
-  <h1>Let's get you home, minus the mortgage headache.</h1>
-  <p class="lede">I help first-time buyers, families, veterans and investors get into the right home loan, with straight answers on your payment, your cash to close and your credit before you ever make an offer.</p>
-  <div class="btn-row">
-   <a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Get Pre-Approved</a>
-   <a class="btn btn-ghost" href="sms:{PHONE_E164}">Text Me: {PHONE_DISPLAY}</a>
+    quick = [
+        ("home", "first-time-home-buyers", "Buying my first home"),
+        ("flag", "va-loans", "Using my VA benefit"),
+        ("refresh", "refinance", "Refinancing"),
+        ("hammer", "new-construction-loans", "Building a new home"),
+    ]
+    quick_html = "".join(f'<a href="/{s}/">{icon(i)}<span>{t}</span></a>' for i, s, t in quick)
+    values = [
+        ("heart", "Relationships first", "Most of my business comes from past clients and the agents I work with. I'd like to be the one you call next time too."),
+        ("people", "Local and involved", f"My office is in {CITY}, Arkansas. When you call, you get me or my team, not a call center."),
+        ("home", "Family-oriented", "I try to handle every purchase the way I'd want someone to handle my own family's."),
+        ("eye", "Transparent", "Payment, cash to close and fees are on paper before you commit to anything."),
+        ("gauge", "Flexible and fast", "Call or text, evenings and weekends included. Pre-approvals are often ready the same day."),
+        ("shield", "Trustworthy", f"Licensed in 13 states. You can look me up on NMLS Consumer Access (#{NMLS}) anytime."),
+    ]
+    values_html = "".join(f'<li>{icon(i)}<h3>{t}</h3><p>{d}</p></li>' for i, t, d in values)
+    out = head(title, desc, url, graph, og_image="/assets/img/hero-porch-home.jpg") + f"""<main id="main">
+<section class="hero">
+ <img class="hero-bg" src="/assets/img/hero-porch-home.jpg" alt="White farmhouse with a wraparound porch and a green lawn" width="1800" height="1200" fetchpriority="high">
+ <div class="wrap">
+  <div class="hero-panel">
+   <p class="kicker">Mortgage {TITLE} · Arkansas, Mississippi &amp; Tennessee</p>
+   <h1>Let's get you home, minus the mortgage headache.</h1>
+   <p class="lede">I help first-time buyers, families, veterans and investors find the right home loan, with straight answers on the payment, the cash to close and your credit before you ever make an offer.</p>
+   <div class="btn-row">
+    <a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Get Pre-Approved</a>
+    <a class="btn btn-ghost" href="sms:{PHONE_E164}">Text {PHONE_DISPLAY}</a>
+   </div>
+   <p class="hero-meta">{NAME} · NMLS #{NMLS} · {COMPANY}</p>
   </div>
  </div>
- <div class="hero-photo">
-  <img src="/assets/hunter-strong.jpg" width="600" height="600" alt="Hunter Strong, mortgage loan officer with FirstTrust Home Loans" fetchpriority="high">
-  <div class="hero-badge"><strong>Easy to reach</strong>Call or text, evenings and weekends too</div>
- </div>
-</div></section>
+</section>
 
-<section class="stats-band" aria-label="At a glance"><div class="wrap">
- <ul class="stats">
-  <li><strong>{YEARS}</strong><span>years in mortgage</span></li>
-  <li><strong>13</strong><span>states licensed</span></li>
-  <li><strong>5-person</strong><span>support team</span></li>
-  <li><strong>FHA · VA</strong><span>first-time buyer pro</span></li>
- </ul>
-</div></section>
+<nav class="quick" aria-label="What are you looking for?"><div class="wrap">
+ <p>I'm interested in&hellip;</p>{quick_html}
+</div></nav>
 
-<section id="about"><div class="wrap about">
- <div class="content">
+<section id="about" class="about"><div class="wrap about-grid">
+ <figure class="about-photo">
+  <img src="/assets/hunter-strong.jpg" width="600" height="600" alt="Hunter Strong, mortgage loan officer with FirstTrust Home Loans" loading="lazy">
+  <figcaption>{NAME} · NMLS #{NMLS}</figcaption>
+ </figure>
+ <div class="about-copy">
   <h2>Hi, I'm Hunter.</h2>
-  <p class="lede">I'm a mortgage {TITLE.lower()} with {COMPANY} in {CITY}, Arkansas. I've spent {YEARS} years helping hundreds of families buy and refinance homes across Arkansas, Mississippi, Tennessee and 10 other states.</p>
-  <p>Buying a home shouldn't feel confusing. I explain every option in plain English, I'm easy to reach, and I treat my clients like family. You won't hear a "lowest rate in town" pitch from me. You'll get great service and the right loan for your situation, and my team of three loan officer assistants and two processors keeps your file moving.</p>
+  <p class="lede">I'm a mortgage {TITLE.lower()} with {COMPANY} in {CITY}, Arkansas. For more than {YEARS[:-1]} years I've helped hundreds of families buy and refinance homes in Arkansas, Mississippi, Tennessee and 10 other states.</p>
+  <p>Buying a home shouldn't feel confusing. I explain every option in plain English, I'm easy to reach, and I treat my clients like family. You won't hear a "lowest rate in town" pitch from me. What you get is honest advice about the loan that fits your situation, plus a team of three loan officer assistants and two processors working to keep your file moving.</p>
   <p>Off the clock, I'm with my wife Jordyn and our daughter Elyse, watching NFL football, reading or out on the lake.</p>
+  <p class="signature" aria-hidden="true">Hunter</p>
   <details class="details-panel">
    <summary>Licensing &amp; contact details</summary>
    <dl class="facts" aria-label="Quick facts about Hunter Strong">
     <div><dt>Name</dt><dd>{NAME}, Mortgage Loan Officer</dd></div>
-    <div><dt>NMLS</dt><dd><a href="{NMLS_URL}" rel="noopener">#{NMLS}</a> · {COMPANY} <a href="{COMPANY_NMLS_URL}" rel="noopener">#{COMPANY_NMLS}</a></dd></div>
+    <div><dt>NMLS</dt><dd><a href="{NMLS_URL}" rel="noopener">#{NMLS}</a> · {COMPANY_LEGAL} <a href="{COMPANY_NMLS_URL}" rel="noopener">#{COMPANY_NMLS}</a></dd></div>
     <div><dt>Office</dt><dd>{STREET}, {CITY}, {REGION} {ZIP}</dd></div>
     <div><dt>Licensed in</dt><dd>{LICENSED_LIST}</dd></div>
     <div><dt>Specialties</dt><dd>{", ".join(SPECIALTIES)}</dd></div>
@@ -735,35 +842,52 @@ def render_home():
  </div>
 </div></section>
 
-<section class="alt" id="loans"><div class="wrap">
+<section class="approach alt"><div class="wrap split">
+ <div>
+  <h2>Getting approved is the easy part. Picking the right loan is what matters.</h2>
+  <p>Two buyers can be approved for the same house and end up in very different places five years later. The down payment, the loan type, mortgage insurance, when you lock your rate and how much cash you keep in the bank all change what that house really costs you.</p>
+  <p>So before you write an offer, we sit down and compare your options side by side: the monthly payment, the cash to close, and what each one looks like over the life of the loan. The decision stays yours, and you can make it knowing exactly why.</p>
+  <a class="text-link" href="#process">See how the process works</a>
+ </div>
+ <img class="split-img" src="/assets/img/signing.jpg" alt="Person signing mortgage paperwork at a desk" width="1100" height="733" loading="lazy">
+</div></section>
+
+<section id="loans"><div class="wrap">
  <h2>Loan programs</h2>
- <p class="section-intro">Every situation is different. Here are the loans I help people with most. Tap any one for a plain-English guide.</p>
- <div class="grid">{loan_cards}</div>
+ <p class="section-intro">These are the loans I help people with most. Each guide covers who it's for, what it takes to qualify and the questions I hear every week.</p>
+ <div class="card-grid">{loan_cards}</div>
 </div></section>
 
-<section><div class="wrap">
- <h2>How working with me works</h2>
- <p class="section-intro">No mystery, no radio silence. Here's what to expect from first call to closing day.</p>
- <ol class="steps">
-  <li><strong>Quick call or text</strong>Tell me what you're trying to do. I'll ask a few questions and explain your options.</li>
-  <li><strong>Apply online</strong>Use my secure application. It takes about 15 minutes.</li>
-  <li><strong>Pre-approval &amp; game plan</strong>You'll see your price range, estimated payment and cash to close in writing.</li>
-  <li><strong>Shop &amp; go under contract</strong>I'll run numbers on any home you're considering and work with your agent.</li>
-  <li><strong>Close &amp; get your keys</strong>My team handles the details and keeps you updated until you're at the closing table.</li>
- </ol>
+<section id="process" class="process"><div class="wrap split split-rev">
+ <img class="split-img" src="/assets/img/keys.jpg" alt="House keys resting next to a small model home" width="1100" height="733" loading="lazy">
+ <div>
+  <h2>How working with me works</h2>
+  <ol class="steps">
+   <li><h3>Start with a conversation</h3><p>Call or text and tell me what you're trying to do. After a few questions I can lay out the options that fit, with no application required yet.</p></li>
+   <li><h3>Get your numbers in writing</h3><p>The online application takes about 15 minutes. We go over your income, assets and credit together, and you get your price range, estimated payment and cash to close on paper.</p></li>
+   <li><h3>Shop, go under contract and close</h3><p>I can run numbers on any home you're considering and work alongside your agent. My team handles the paperwork and keeps you posted through closing day.</p></li>
+  </ol>
+  <a class="btn btn-primary" href="{APPLY_URL}" rel="noopener">Start the Application</a>
+ </div>
 </div></section>
 
-<section class="alt" id="areas"><div class="wrap">
+<section class="values alt"><div class="wrap">
+ <h2>What working with my team looks like</h2>
+ <p class="section-intro">FirstTrust was built on a handful of core values. Here's what they mean on an actual loan.</p>
+ <ul class="value-list">{values_html}</ul>
+</div></section>
+
+<section id="areas"><div class="wrap">
  <h2>Where I lend</h2>
- <p class="section-intro">I'm based in {CITY}, Arkansas, and I focus on Arkansas, Mississippi and Tennessee. I'm also licensed in {other_states}, so if you're relocating or buying out of state, I can still help.</p>
- <div class="grid">{area_cards}</div>
+ <p class="section-intro">I focus on Arkansas, Mississippi and Tennessee. I'm also licensed in {other_states}, so if you're relocating or buying out of state, I can still help.</p>
+ <div class="card-grid card-grid-3">{area_cards}</div>
 </div></section>
 
-<section id="faq"><div class="wrap">
+<section id="faq" class="alt"><div class="wrap"><div class="content">
  <h2>Questions I get every week</h2>
- <p class="section-intro">The big three are always cash to close, the payment versus the house and credit scores. Here are straight answers.</p>
+ <p class="section-intro">The big three are cash to close, the payment versus the price of the house, and credit scores. Here are straight answers.</p>
  {faq_html(HOME_FAQS)}
-</div></section>
+</div></div></section>
 {cta()}
 </main>
 {footer()}
