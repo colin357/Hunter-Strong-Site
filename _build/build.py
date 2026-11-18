@@ -627,7 +627,7 @@ def footer():
    <p>{NAME}, NMLS #{NMLS} (<a href="{NMLS_URL}" rel="noopener">NMLS Consumer Access</a>). {COMPANY_LEGAL}, NMLS #{COMPANY_NMLS} (<a href="{COMPANY_NMLS_URL}" rel="noopener">NMLS Consumer Access</a>). Equal Housing Lender. Licensed to originate mortgage loans in {LICENSED_LIST}. <a href="{LICENSING_URL}" rel="noopener">Licensing &amp; legal disclosures</a>. Information on this site is general and educational, not financial or legal advice. Down payment assistance is provided by third-party agencies and subject to their eligibility rules and fund availability.</p>
   </div>
  </div>
- <div class="foot-bar"><div class="wrap">© 2026 {NAME} · {COMPANY_LEGAL} · Content updated {UPDATED}</div></div>
+ <div class="foot-bar"><div class="wrap">© 2026 {NAME} · {COMPANY_LEGAL} · Content updated {UPDATED} · Designed by <a href="https://ownitsocial.com" target="_blank" rel="noopener" style="color:inherit">Own It Social</a></div></div>
 </footer>"""
 
 
