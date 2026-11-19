@@ -824,7 +824,7 @@ def render_home():
  </figure>
  <div class="about-copy">
   <h2>Hi, I'm Hunter.</h2>
-  <p class="lede">I'm a mortgage {TITLE.lower()} with {COMPANY} in {CITY}, Arkansas. For more than {YEARS[:-1]} years I've helped hundreds of families buy and refinance homes in Arkansas, Mississippi, Tennessee and 10 other states.</p>
+  <p class="lede">I'm a mortgage {TITLE.lower()} with {COMPANY} in {CITY}, Arkansas. For more than {YEARS[:-1]} years I've helped thousands of families buy and refinance homes in Arkansas, Mississippi, Tennessee and 10 other states.</p>
   <p>Buying a home shouldn't feel confusing. I explain every option in plain English, I'm easy to reach, and I treat my clients like family. You won't hear a "lowest rate in town" pitch from me. What you get is honest advice about the loan that fits your situation, plus a team of three loan officer assistants and two processors working to keep your file moving.</p>
   <p>Off the clock, I'm with my wife Jordyn and our daughter Elyse, watching NFL football, reading or out on the lake.</p>
   <p class="signature" aria-hidden="true">Hunter</p>
